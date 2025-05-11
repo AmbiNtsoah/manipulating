@@ -1,7 +1,7 @@
 const connection = require('../../db/mysql');
 const fs = require('fs');
 const path = require('path');
-const { encryptAudio, decryptAudio } = require('../services/audioService');
+const { encryptAudio, decryptAudio } = require('../services/audioservice');
 
 async function getUserById(userId) {
   const query = 'SELECT * FROM users WHERE id = ?';
